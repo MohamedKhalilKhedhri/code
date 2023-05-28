@@ -1,0 +1,507 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(176, 135, 135);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+header nav .tit {
+    font-size: 35px;
+    color: rgb(201, 155, 155);
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+    font-style: italic;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+header nav ul li a {
+    font-size: 15px;
+    color: rgb(202, 164, 164);
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+    font-style: italic;
+}
+
+.log {
+    padding: 10px 25px;
+    background-color: rgb(102, 75, 41);
+    border-radius: 30px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+    font-style: italic;
+}
+
+.face {
+    width: 100%;
+    height: calc(100vh - 82.4px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.face .eye p {
+    max-width: 500px;
+}
+
+.face .genre {
+    width: 500px;
+    height: calc(632.8px - 264.8px);
+    background-color: white;
+    border-radius: 38% 62% 70% 30% / 30% 30% 70% 70%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.face .genre img {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.face .eye {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.face .eye h1 {
+    font-size: 45px;
+    color: white;
+    /*latest products*/
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+    font-style: italic;
+    letter-spacing: 4px;
+    position: relative;
+}
+
+.face .eye p {
+    font-size: 15px;
+    color: white;
+    /*latest products*/
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+    font-style: italic;
+    letter-spacing: 4px;
+    position: relative;
+}
+
+.new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 50px;
+}
+
+.new .lp {
+    font-size: 45px;
+    color: rgb(176, 135, 135);
+    /*latest products*/
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+    font-style: italic;
+    letter-spacing: 4px;
+    position: relative;
+}
+
+.card .lo h2 {
+    font-size: 45px;
+    color: white;
+    /*latest products*/
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+    font-style: italic;
+    letter-spacing: 4px;
+    position: relative;
+}
+
+.new a {
+    padding: 10px 40px;
+    background-color: rgb(176, 135, 135);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 30px;
+    color: rgb(255, 255, 254);
+}
+
+.new .lp::before {
+    content: '';
+    position: absolute;
+    bottom: -25%;
+    left: 130px;
+    width: 30%;
+    height: 7px;
+    background-color: rgb(176, 135, 135);
+    border-radius: 40px;
+}
+
+.news {
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.news .card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    height: 500px;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px #161616;
+}
+
+.news .card img {
+    position: absolute;
+    top: 0;
+    margin: auto;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.news .card .lo {
+    position: absolute;
+    bottom: 20%;
+    font-size: 15px;
+    color: rgb(235, 215, 215);
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+    font-style: italic;
+}
+
+.news .card .lo {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(176, 135, 135, 0.615);
+    transition: 0.7s ease-in-out;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.news .card:hover .lo {
+    height: 100%;
+}
+
+.news .card .lo a {
+    padding: 10px 50px;
+    border-radius: 10px;
+    background-color: rgb(243, 233, 221);
+    color: rgb(18, 18, 18);
+    transition: 0.2s ease-in-out;
+}
+
+.news .card .lo a:hover {
+    background-color: rgb(209, 204, 199);
+}
+
+.pre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px 0px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(176, 135, 135);
+    row-gap: 50px;
+}
+
+.pre .def {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.pre .def h2 {
+    font-size: 45px;
+    color: rgb(254, 250, 250);
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+    font-style: italic;
+}
+
+.pre .def p {
+    font-size: 20px;
+    color: rgb(242, 239, 239);
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+    font-style: italic;
+    line-height: 25px;
+}
+
+.pre .carte {
+    width: 400px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.pre .def {
+    width: 500px;
+}
+
+.pre .carte img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pre .carte::before {
+    content: 'Best Tailors';
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+}
+
+.pple {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.pple h1 {
+    font-size: 45px;
+    color: rgb(235, 215, 215);
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+    font-style: italic;
+}
+
+.pple .avi {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 50px 0px;
+    gap: 50px;
+}
+
+.pple .avi .avis {
+    width: 400px;
+    height: 500px;
+    background-color: rgb(235, 215, 215);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+    box-shadow: 0.5px 0.5px 5px black;
+    transition: 0.5s ease-in-out;
+}
+
+.pple .avi .avis:hover {
+    transform: translateY(-10px);
+}
+
+.pple .avi .avis .co {
+    line-height: 25px;
+    font-size: 25px;
+    color: rgb(3, 3, 3);
+    font-family: 'Bitter', serif;
+    font-style: italic;
+}
+
+.pple .avi .avis .mb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pple .avi .avis .mb .profile {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: wheat;
+    position: relative;
+    overflow: hidden;
+}
+
+.pple .avi .avis .mb .profile img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.pple .avi .avis .mb .pn {
+    margin-left: 10px;
+}
+
+.pple .avi .avis .mb .pn .namep {
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(21, 21, 21);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pple .avi .avis .mb .pn .date {
+    font-size: 10px;
+    color: rgb(99, 99, 99);
+}
+
+.for {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec {
+    position: relative;
+    max-width: 700px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+    gap: 10px;
+    background-color: rgb(235, 215, 215);
+}
+
+.sec .a,
+.b,
+.f {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sec h3 {
+    text-align: left;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(232, 147, 147);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sec .a label,
+.b label {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(21, 21, 21);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sec .a input,
+.b select {
+    width: 90%;
+    height: 35px;
+    border-radius: 10px;
+    text-indent: 10px;
+    font-size: 15px;
+    outline: 0;
+    border: 1px solid black;
+}
+
+.sec.b select option {
+    height: 30px;
+}
+
+.sec .pro {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.sec .f label {
+    border: 1px solid #ccc;
+    display: flex;
+    padding: 6px 12px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+.sub {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sub input {
+    padding: 5px 30px;
+    background-color: rgb(235, 215, 215);
+    color: rgb(53, 51, 51);
+    border: 1px solid gray;
+    outline: 0;
+    cursor: pointer;
+}

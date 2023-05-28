@@ -1,0 +1,314 @@
+    * {
+        padding: 0%;
+        margin: 0%;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    
+    html {
+        background-color: #161616;
+    }
+    
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48
+    }
+    
+    header {
+        width: 100%;
+        background-color: #161616;
+    }
+    
+    header nav {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 10px 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    header nav img {
+        width: 200px;
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    header nav ul li a {
+        display: flex;
+        margin-left: 50px;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: relative;
+        color: white;
+    }
+    
+    header nav ul li a::before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: green;
+        transition: 0.5s ease-in-out;
+    }
+    
+    header nav ul li a:hover::before {
+        width: 100%;
+        left: 0;
+    }
+    
+    .a {
+        background-color: #161616;
+    }
+    
+    header nav .sea {
+        border: 2px solid white;
+        display: flex;
+        align-items: center;
+        border-radius: 60px;
+        overflow: hidden;
+        padding: 0px 5px;
+        background-color: white;
+    }
+    
+    header nav .sea input {
+        padding: 10px 20px;
+        font-size: 15px;
+        border: 0px;
+        outline: 0;
+    }
+    
+    header nav .sea button {
+        display: flex;
+        padding: 5px;
+        border-radius: 50%;
+        outline: none;
+        border: 1px solid black;
+        background-color: rgb(34, 101, 40);
+        cursor: pointer;
+    }
+    
+    header .photo {
+        background-image: url("../new/ye.jpg");
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    header .photo .ap {
+        width: 100%;
+        height: 500px;
+        position: relative;
+    }
+    
+    header .photo .ap img {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        object-fit: contain;
+    }
+    
+    .t {
+        margin-top: 50px;
+        padding: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        color: green;
+    }
+    
+    .top {
+        margin: 70px auto auto auto;
+        width: 90%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        gap: 10px;
+        overflow-x: scroll;
+    }
+    
+    .top .card {
+        min-width: 250px;
+        height: 350px;
+        background-color: rgb(26, 84, 39);
+        position: relative;
+    }
+    
+    .top .card p {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        bottom: 0;
+        height: 100%;
+        background: linear-gradient(to top, black, transparent);
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 20px;
+        transition: .5s ease-in-out;
+        overflow: hidden;
+        opacity: 0;
+        color: white;
+    }
+    
+    .top .card:hover p {
+        opacity: 1;
+    }
+    
+    .top .card img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .ka {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap-reverse;
+        justify-content: space-evenly;
+        margin-top: 100px;
+        background-color: #161616;
+    }
+    
+    .ka aside {
+        width: 400px;
+    }
+    
+    .ka aside .media {
+        direction: rtl;
+    }
+    
+    .ka aside .media h2 {
+        padding: 10px;
+        border: 2px solid green;
+        color: white;
+    }
+    
+    .ka aside .media .lis {
+        padding: 10px 0px;
+        display: flex;
+        border: 2px solid green;
+    }
+    
+    .ka aside .media .lis a {
+        margin-right: 20px;
+        padding: 4px;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+    }
+    
+    .ka aside .news {
+        margin-top: 50px;
+    }
+    
+    .ka aside .news .new {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        direction: rtl;
+        padding: 10px;
+        align-items: center;
+        border: 2px solid green;
+    }
+    
+    .ka aside .news .new a {
+        padding: 10px 50px;
+        color: white;
+        background-color: green;
+    }
+    
+    .ka aside .news .pp {
+        border: 2px solid green;
+        direction: rtl;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px;
+        border-bottom: 1px gray solid;
+        color: white;
+    }
+    
+    .ka aside .news .pp a {
+        padding: 10px 50px;
+        color: white;
+        background-color: green;
+        width: fit-content;
+    }
+    
+    section {
+        max-width: 800px;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        direction: rtl;
+        position: relative;
+    }
+    
+    section .car {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 250px;
+        height: 150px;
+        justify-content: space-between;
+    }
+    
+    section .car .ct {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+    
+    section .car .ct .chaps {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    section .car .ct .nam {
+        color: white;
+        font-size: 20px;
+        font-style: italic;
+    }
+    
+    section .car .ct .chaps a {
+        margin-top: 10px;
+        color: white;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    section .car .wal {
+        width: 100px;
+        height: 100%;
+        position: relative;
+    }
+    
+    section .car .wal img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }

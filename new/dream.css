@@ -1,0 +1,103 @@
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    
+    head {
+        background-color: black;
+    }
+    
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+        background-image: url(../new/moon.jpg);
+        background-size: cover;
+        background-position: bottom;
+        object-fit: cover;
+        align-items: center;
+    }
+    
+    header .vid {
+        position: absolute;
+        bottom: -10%;
+        width: 90%;
+        height: 500px;
+        border: 2px solid #cc33b3;
+        object-fit: cover;
+        border-radius: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    header .vid a {
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 20px 100px;
+        border: 2px solid #FF6EC7;
+        background-color: #7e1857;
+        position: absolute;
+        bottom: 10%;
+        transition: 0.5s;
+    }
+    
+    header .vid a:hover {
+        border-radius: 40px;
+        letter-spacing: 5px;
+        box-shadow: inset 0 0 20px #faf8f8;
+    }
+    
+    .vid video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(to right, whitesmoke, rgb(238, 92, 182));
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    nav h1 {
+        font-size: 30px;
+        color: rgb(6, 4, 145);
+        margin: .5rem;
+    }
+    
+    nav h1 span {
+        color: #cc33b3;
+    }
+    
+    nav ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        list-style: none;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        display: block;
+    }
+    
+    nav ul li a:hover {
+        color: brown;
+        background-color: whitesmoke;
+    }

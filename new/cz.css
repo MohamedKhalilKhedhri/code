@@ -1,0 +1,322 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: rgba(0, 0, 0, 0.925);
+    }
+    
+    header {
+        background-color: rgba(0, 0, 0, 0.925);
+        position: relative;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    header .c {
+        width: 200px;
+        height: 60px;
+        position: absolute;
+        right: 30px;
+        top: 15%;
+    }
+    
+    header input[type="text"] {
+        position: absolute;
+        width: 350px;
+        height: 35px;
+        border-radius: 5px;
+        text-align: right;
+        font-size: large;
+        top: 30%;
+        right: 20%;
+    }
+    
+    header .cc {
+        height: 80%;
+        width: 150px;
+    }
+    /******************************************/
+    
+    nav {
+        background-color: rgb(12, 97, 83);
+    }
+    
+    ul {
+        margin-left: 50%;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        padding: 20px;
+        list-style-type: none;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: large;
+    }
+    
+    .s {
+        background-image: url(../new/ye.jpg);
+        height: 500px;
+        opacity: 10px;
+        position: relative;
+    }
+    
+    .s img {
+        position: absolute;
+        left: 20%;
+    }
+    
+    .duo {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    
+    .duo .f table td {
+        border: 3px solid rgb(12, 97, 83);
+        color: white;
+        text-align: right;
+        font-size: 20px;
+        padding: 15px;
+        border-radius: 5px;
+        border-collapse: collapse;
+        width: 270px;
+    }
+    
+    .logo i {
+        color: white;
+        margin-right: 30px;
+        max-height: 80px;
+        width: auto;
+        margin-left: 20px;
+    }
+    
+    .lila {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .duo .f table td .lil {
+        text-decoration: none;
+        color: white;
+        margin-right: 130px;
+        border: 2px solid rgb(12, 97, 83);
+        background-color: rgb(12, 97, 83);
+        border-radius: 6px;
+        padding: 3px;
+        width: 50px;
+        text-align: center;
+    }
+    
+    .duo .f {
+        position: absolute;
+        left: 150px;
+        top: 100px;
+    }
+    
+    .lilo {
+        text-decoration: none;
+        color: white;
+        border: 2px solid rgb(12, 97, 83);
+        background-color: rgb(12, 97, 83);
+        border-radius: 6px;
+        padding: 5px;
+        font-size: 17px;
+    }
+    
+    .rand img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .m {
+        height: 110vw;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0%;
+        top: 0px;
+    }
+    
+    .m .sd {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+    
+    .m .sd .sdd {
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        margin-right: 20px;
+    }
+    
+    .m .sd .sdd .hov {
+        margin-right: 5px;
+    }
+    
+    .m .sd img {
+        width: 200px;
+        height: 300px;
+    }
+    
+    .m .sd {
+        position: relative;
+    }
+    
+    .m .sd h1 {
+        position: absolute;
+        top: 0%;
+        right: 4%;
+        border-bottom: 10px solid rgb(12, 97, 83);
+        color: aliceblue;
+        width: 200px;
+        text-align: right;
+    }
+    
+    .sdd .hov {
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .sdd .hov p {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        color: whitesmoke;
+        text-align: center;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif sans-serif;
+        font-size: 30px;
+        background: linear-gradient(to top, rgba(1, 69, 24, 1), transparent);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.4s;
+        opacity: 0;
+    }
+    
+    .hov:hover {
+        transform: scale(1.2);
+        z-index: 2;
+    }
+    
+    .hov p:hover {
+        opacity: 1;
+    }
+    
+    .ssd h2 {
+        color: whitesmoke;
+        background-color: rgb(12, 97, 83);
+        font-size: 25px;
+        position: absolute;
+        right: 2%;
+        width: 90%;
+        height: 50px;
+        padding-top: 25px;
+        padding-right: 10px;
+        text-align: right;
+        margin-top: 100px;
+        border-radius: 20px;
+    }
+    
+    .ra {
+        position: absolute;
+        right: 30px;
+        bottom: 0%;
+    }
+    
+    .m .ra .ro {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .ri {
+        display: flex;
+        flex-direction: row;
+        margin-right: 50px;
+    }
+    
+    .ri img {
+        width: 100px;
+        height: 150px;
+    }
+    
+    .lonk {
+        display: flex;
+        flex-direction: column;
+        font-size: large;
+        font-style: italic;
+        margin-right: 90px;
+    }
+    
+    .lonk a {
+        margin-top: 10px;
+    }
+    
+    .ra a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+    
+    @media screen and (max-width: 600px) {
+        header {
+            width: 100%;
+        }
+        header .c {
+            width: 100px;
+        }
+        header input[type="text"] {
+            width: 300px;
+            right: 25%;
+        }
+        nav {
+            width: 100%;
+        }
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            margin-left: 5%;
+        }
+        nav ul li a:link {
+            text-align: center;
+            padding: 10px 100px 10px 100px;
+            font-size: large;
+        }
+        nav ul li a:hover {
+            background-color: whitesmoke;
+            color: black;
+        }
+        .s {
+            height: 250px;
+        }
+        .s img {
+            width: 100%;
+            left: 0%;
+        }
+        .m {
+            height: 3700px;
+        }
+        .f {
+            margin-top: 3800px;
+            margin-right: 100px;
+        }
+        .duo {
+            flex-direction: column-reverse;
+        }
+        .m .ra .ro {
+            flex-direction: column;
+        }
+        .ra {
+            margin-top: 250px;
+        }
+    }

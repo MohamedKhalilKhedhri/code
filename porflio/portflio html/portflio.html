@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../portflio css/portflio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/371c3c4d66.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/371c3c4d66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <button class="verify" id="verify" onclick="afficher()"><span class="material-symbols-outlined">
+            menu
+            </span></button>
+        <nav id="nav">
+            <button class="close" onclick="afficher()"> <span class="material-symbols-outlined">
+                close
+                </span></button>
+            <h3>Mohamed Khalil Khehdri</h3>
+            <ul>
+                <li>
+                    <a href="#about_me">About me</a>
+                </li>
+
+                <li>
+                    <a href="#project">my projects</a>
+                </li>
+                <li>
+                    <a href="#contact_me">contact me</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="overview">
+
+            <p>hello iam mohamed khalil khedhri</p>
+            <h1>Computer Sciences <br> Student</h1>
+            <h3>i built some websites and applications</h3>
+            <a href="../portflio_img/cv.pdf" class="project" download target="_blank">My cv</a>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/khedhri-mohamed-khalil-727358241/" class=" fa-brands fa-linkedin " target="_blank"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100005864806213" class=" fa-brands fa-square-facebook " target="_blank">
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+    <div class="profile" id="about_me">
+
+        <div class="image"> <img src="../portflio_img/khalil.jpg" alt=""></div>
+        <div class="about">
+            <h1><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span> <span>M</span><span>e</span></h1>
+            <p> <span class="khalil">M</span>y name is Mohamed Khalil Khedhri. I am a student specializing in big data and data analysis. I have a real passion for web development and I am constantly looking for new opportunities to develop my skills in the
+                creation of interactive sites. Parally, I like to explore mobile development and create user -friendly applications using different technologies. I am able to contribute effectively to a group by sharing ideas, solving problems together
+                and promoting a harmonious work environment.</p>
+            <a href="#contact_me">Contact me</a>
+        </div>
+
+    </div>
+    <h1 class=" newsection " id="project">My Projects</h1>
+
+    <script>
+        const myNav = document.getElementById('nav')
+
+        window.onscroll = function() {
+            if (window.scrollY > window.innerHeight) {
+                myNav.classList.add('scrolled')
+            } else {
+                myNav.classList.remove('scrolled')
+            }
+        }
+
+
+        function afficher() {
+            var y = document.getElementById("verify")
+            var x = document.getElementById('nav');
+            if (x.style.display != "none") {
+                x.style.display = "none";
+                y.style.display = "block"
+            } else {
+                x.style.display = 'flex';
+                y.style.display = "none"
+            }
+        }
+    </script>
+    <div class="myworks">
+
+        <div class="work ">
+            <h1>Web Site Gallery : artVista</h1>
+            <p>It is a website that has been designed to share stunning wallpapers with people.</p>
+            <a href="https://mohamedkhalilkhedhri.github.io/code/pinterest/pinterrest_html/remmember.html" target="_blank">View Web <span class="material-symbols-outlined"> keyboard_double_arrow_right </span></a>
+        </div>
+        <div class="work ">
+            <h1>cloning a korean Manhuwa website</h1>
+
+            <p>It is a website designed to share manhuwa (Fairy tales)</p>
+            <a href="https://mohamedkhalilkhedhri.github.io/code/zero_to_hero/teamx.html" target="_blank">View Web <span class="material-symbols-outlined"> keyboard_double_arrow_right </span></a>
+        </div>
+        <div class="work ">
+            <h1>Main page of shopping website /Blackshop</h1>
+            <p>It is a website designed to sell black clothes for enthusiasts of dark colors</p>
+            <a href="https://mohamedkhalilkhedhri.github.io/code/zero_to_hero/blackshop.html" target="_blank">View Web <span class="material-symbols-outlined"> keyboard_double_arrow_right </span></a>
+        </div>
+        <div class="work ">
+            <h1>Online tailoring</h1>
+            <p>It is a website designed to accept online orders related to tailoring/leatherworking.</p>
+            <a href="https://mohamedkhalilkhedhri.github.io/code/zero_to_hero/tailoring.html" target="_blank">View Web <span class="material-symbols-outlined"> keyboard_double_arrow_right </span></a>
+        </div>
+
+    </div>
+    <div class="showmore">
+        <ul>
+            <li>
+                <a href=" "><span class="material-symbols-outlined turn"> keyboard_double_arrow_right </span></a>
+            </li>
+            <li>
+                <a href=" ">1</a>
+            </li>
+            <li>
+                <a href=" ">2</a>
+            </li>
+            <li>
+                <a href=" ">3</a>
+            </li>
+            <li>
+                <a href=" ">4</a>
+            </li>
+            <li>
+                <a href=" ">5</a>
+            </li>
+            <li>
+                <a href=" "><span class="material-symbols-outlined"> keyboard_double_arrow_right </span></a>
+            </li>
+        </ul>
+    </div>
+    <h1 class="cont" id="contact_me">Contact me</h1>
+    <div class="contact"></div>
+    <div class="coffee">
+
+        <form action=" " method="post ">
+            <div class="identifier"><input type="text" name="name" placeholder="Your Name" maxlength="20">
+                <input type="text" name="prename" placeholder="Your Prename" maxlength="20"></div>
+            <input type="email" placeholder="customer@mail.com" name="mail" required>
+            <textarea name="letter" cols="10" rows="10" maxlength="800 " placeholder="Mail Content"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p class="copyright">
+        &copy; Mohamed Khalil Khedhri. All rights reserved. 2023
+    </p>
+    <br>
+
+
+</body>
+
+</html>

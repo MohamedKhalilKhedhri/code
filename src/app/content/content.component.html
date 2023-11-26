@@ -1,0 +1,29 @@
+<section class="gallery-1">
+    <ng-container *ngFor="let image of gallery">
+        <div class="imCard">
+            <img *ngIf="image.lecture === 'img'" [src]="image.url" alt="{{ image.id }}" (click)="catchTypeSrc(image.url, image.decription,image.lecture)" />
+
+            <video #myVideo *ngIf="image.lecture === 'vid'" controls (click)="catchTypeSrc(image.url, image.decription,image.lecture)">
+                <source [src]="image.url" type="video/mp4">
+            </video>
+
+        </div>
+    </ng-container>
+
+    <div class="PopUp-Container " [hidden]="!popUpImage">
+
+        <div class="PopUp-div">
+            <button (click)="closePopUpHandler()" class="material-symbols-outlined closebtn ">close</button>
+            <div class="ImageBorder">
+                <img *ngIf="isImg === 'img'" [src]="popUpImage" alt=" ">
+
+                <video *ngIf="isImg === 'vid'" controls>
+                    <source [src]="popUpImage" type="video/mp4">
+                </video>
+            </div>
+
+            <p class="PopUp-div-description">{{description}}</p>
+
+        </div>
+    </div>
+</section>
